@@ -1,0 +1,114 @@
+body, html{
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(239,239,239);
+}
+
+.main{
+margin: 20px;  
+background-color: rgb(255,255,255);
+height: 230px;
+width: 250px;
+border-radius: 10px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+display: grid;
+grid-template:
+"header header header" 32px
+"rating quantity weight_tea" 32px
+"type kind kind" 32px
+"taste_name taste_name taste_name"32px
+"taste_1 taste_2 taste_2"32px
+"taste_3 taste_3 taste_3"32px
+"button button button" 32px / 1fr 1fr 1fr
+;
+}
+.header{
+grid-area: header;
+justify-self: center;
+}
+.rating{
+grid-area: rating;
+}
+.quantity{
+grid-area: quantity;
+}
+
+.weight_tea{
+grid-area: weight_tea;
+ }
+
+.type{
+    padding: 5px;
+grid-area: type;
+background-color:rgb(221,237,207) ;
+border-radius: 20px;
+justify-self: center;
+
+ }
+ .kind{
+    padding: 5px;
+grid-area: kind;
+background-color:rgb(255,224,254) ;
+border-radius: 20px;
+justify-self: center;
+
+ }
+
+.taste_name{
+ grid-area: taste_name;
+}
+
+ .taste_1{
+ grid-area: taste_1;
+ }
+
+.taste_2{
+grid-area: taste_2;
+}
+
+.taste_3{
+grid-area: taste_3;
+ }
+
+.button{
+ grid-area: button;
+ justify-self: center;
+}
+
+
+.rating, .quantity, .weight_tea, .type, .kind, .taste_name, .taste_1, .taste_2 ,.taste_3 {
+    margin-left: 10px;
+}
+
+
+button{
+    background-color: rgb(235,81,175);
+    border: 2px solid rgb(27,217,141);
+    width: 180px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 30px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    
+}
+button:hover{
+    background-color: rgb(27,217,141) ;
+    border: 2px solid rgb(235,81,175);
+    color: black;
+ 
+}
